@@ -1,0 +1,27 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    // Permite a inclusão de arquivos JavaScript no projeto TypeScript.
+    "allowJs": false,
+    // Permite a importação de módulos padrão do CommonJS como valores padrão.
+    "allowSyntheticDefaultImports": true,
+    // Permite a interoperabilidade entre módulos que utilizam diferentes sistemas de módulos.
+    "esModuleInterop": true,
+    // Isola cada arquivo em seu próprio contexto, melhorando a verificação de tipos.
+    "isolatedModules": true,
+    // Define o tipo de sintaxe JSX a ser usado (no caso, para o React).
+    "jsx": "react",
+    // Lista das bibliotecas a serem incluídas nas verificações de tipo.
+    "lib": ["es6"],
+    // Define como o TypeScript resolve os módulos.
+    "moduleResolution": "node",
+    // Não gera arquivos de saída. Usado quando você quer apenas verificar tipos.
+    "noEmit": true,
+    // Habilita verificações de tipo rigorosas para um código mais seguro.
+    "strict": true,
+    // Especifica para qual versão do ECMAScript o código será compilado.
+    "target": "esnext"
+  },
+  // Lista de arquivos/diretórios a serem excluídos do processo de compilação.
+  "exclude": ["node_modules", "babel.config.js", "metro.config.js", "jest.config.js"]
+}
